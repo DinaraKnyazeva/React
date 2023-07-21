@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.cardSuperheroes__app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+.cardSuperheroes__container {
+  width: 23vw;
+  border: 1px double black;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+h1 {
+  text-align: center;
+}
+.cardSuperheroes__container img {
+  width: 95%;
+}
+.cardSuperheroes__text {
+  font-weight: 900;
+}
+.cardSuperheroes__rating-area {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.cardSuperheroes__rating-area:not(:checked) > input {
+  display: none;
+}
+.cardSuperheroes__rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.cardSuperheroes__rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.cardSuperheroes__rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.cardSuperheroes__rating-area:not(:checked) > label:hover,
+.cardSuperheroes__rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.cardSuperheroes__rating-area > input:checked + label:hover,
+.cardSuperheroes__rating-area > input:checked + label:hover ~ label,
+.cardSuperheroes__rating-area > input:checked ~ label:hover,
+.cardSuperheroes__rating-area > input:checked ~ label:hover ~ label,
+.cardSuperheroes__rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.cardSuperheroes__rate-area > label:active {
+  position: relative;
+}
