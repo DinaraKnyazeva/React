@@ -1,0 +1,87 @@
+.cards {
+  display: flex;
+}
+
+.cards__inner {
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.cards__speed {
+  background-color: rgba(209, 209, 209, 0.36);
+}
+
+.cards__info {
+  background-color: rgba(166, 166, 166, 0.36);
+}
+
+.cards__info-text {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cards__title-text {
+  color: white;
+}
+
+.cards__price-box {
+  padding: 15%;
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  align-items: flex-end;
+}
+.cards__price-box div {
+  color: white;
+  margin: 2px;
+}
+
+.cards__price-sum {
+  font-size: 40px;
+}
+
+.cards__price-ru {
+  padding-bottom: 15%;
+}
+
+.selected {
+  border: 2px solid black;
+}
+
+.blue {
+  background-color: rgb(29, 195, 228);
+}
+
+.light-blue {
+  background-color: rgba(29, 195, 228, 0.67);
+}
+
+.green {
+  background-color: rgb(11, 203, 136);
+}
+
+.light-green {
+  background-color: rgba(11, 203, 136, 0.67);
+}
+
+.red {
+  background-color: rgb(216, 41, 41);
+}
+
+.light-red {
+  background-color: rgba(216, 41, 41, 0.67);
+}
+
+.black {
+  background-color: rgb(10, 9, 9);
+}
+
+.light-black {
+  background-color: rgba(10, 9, 9, 0.67);
+}/*# sourceMappingURL=App.css.map */
