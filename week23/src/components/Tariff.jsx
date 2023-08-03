@@ -3,13 +3,22 @@ import "../style/App.scss";
 
 export default class Tariff extends React.Component {
   render() {
-    const { name, price, speed, isisSelected } = this.props;
+    const { name, price, speed, isSelected, bgcolor, bgcolorlight } =
+      this.props;
     return (
-      <div className={"cards__inner" + (isisSelected ? "selected" : "")}>
-        <div className="cards__title">
-          <p className="cards__title-text">{name}</p>
+      <div
+        className={"cards__inner" + (isSelected === true ? " selected" : "")}
+      >
+        <div className={`cards__title ${bgcolorlight}`}>
+          <p
+            className={
+              "cards__title-text" + (isSelected === true ? " height" : "")
+            }
+          >
+            {name}
+          </p>
         </div>
-        <div className="cards__price-box">
+        <div className={`cards__price-box ${bgcolor}`}>
           <div className="cards__price-ru">руб</div>
           <div className="cards__price-sum">{price}</div>
           <div className="cards__price-m">/мес</div>

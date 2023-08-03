@@ -28,6 +28,9 @@ div {
 
 .cards__title-text {
   color: white;
+  height: 35px;
+  text-align: center;
+  font-size: 22px;
 }
 
 .cards__price-box {
@@ -48,10 +51,6 @@ div {
 
 .cards__price-ru {
   padding-bottom: 15%;
-}
-
-.selected {
-  border: 2px solid black;
 }
 
 .blue {
@@ -84,4 +83,13 @@ div {
 
 .light-black {
   background-color: rgba(10, 9, 9, 0.67);
+}
+
+.selected {
+  box-shadow: 8px 8px 8px 8px rgba(15, 29, 32, 0.315), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.height {
+  height: 50px;
+  padding-top: -5px;
 }/*# sourceMappingURL=App.css.map */

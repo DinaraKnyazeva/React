@@ -14,6 +14,7 @@ export default function App() {
             speed={tariff.speed}
             isSelected={tariff.isSelected}
             bgcolor={tariff.bgcolor}
+            bgcolorlight={tariff.bgcolorlight}
           ></Tariff>
         ))}
       </div>

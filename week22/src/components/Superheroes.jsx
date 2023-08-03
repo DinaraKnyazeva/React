@@ -23,47 +23,47 @@ function Superheroes(props) {
         {props.superpowers}
       </div>
       <img src={props.url} alt="img super heroes" />
-      <div class="cardSuperheroes__rating-area">
+      <div className="cardSuperheroes__rating-area">
         <input
           className="cardSuperheroes__star"
           type="radio"
-          id="star-5${item.name}"
-          name="rating-${item.name}"
+          id={`star-5${props.name}`}
+          name={`rating-${props.name}`}
           value="5"
         />
-        <label for="star-5${item.name}" title="Оценка «5»"></label>
+        <label for={`star-5${props.name}`} title="Оценка «5»"></label>
         <input
           className="cardSuperheroes__star"
           type="radio"
-          id="star-4${item.name}"
-          name="rating-${item.name}"
+          id={`star-4${props.name}`}
+          name={`rating-${props.name}`}
           value="4"
         />
-        <label for="star-4${item.name}" title="Оценка «4»"></label>
+        <label for={`star-4${props.name}`} title="Оценка «4»"></label>
         <input
           className="cardSuperheroes__star"
           type="radio"
-          id="star-3${item.name}"
-          name="rating-${item.name}"
+          id={`star-3${props.name}`}
+          name={`rating-${props.name}`}
           value="3"
         />
-        <label for="star-3${item.name}" title="Оценка «3»"></label>
+        <label for={`star-3${props.name}`} title="Оценка «3»"></label>
         <input
           className="cardSuperheroes__star"
           type="radio"
-          id="star-2${item.name}"
-          name="rating-${item.name}"
+          id={`star-2${props.name}`}
+          name={`rating-${props.name}`}
           value="2"
         />
-        <label for="star-2${item.name}" title="Оценка «2»"></label>
+        <label for={`star-2${props.name}`} title="Оценка «2»"></label>
         <input
           className="cardSuperheroes__star"
           type="radio"
-          id="star-1${item.name}"
-          name="rating-${item.name}"
+          id={`star-1${props.name}`}
+          name={`rating-${props.name}`}
           value="1"
         />
-        <label for="star-1${item.name}" title="Оценка «1»"></label>
+        <label for={`star-1${props.name}`} title="Оценка «1»"></label>
       </div>
     </div>
   );

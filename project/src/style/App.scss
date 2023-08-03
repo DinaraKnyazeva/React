@@ -1,2 +1,7 @@
-.card-words {
-}
+@import "./base/normalize";
+@import "./base/typography";
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+@import "../components/card/card";
+@import "../components/dictionary/dictionary";
+@import "../components/title/title";

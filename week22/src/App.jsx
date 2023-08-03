@@ -17,7 +17,7 @@ class App extends React.Component {
             occupation={heroes.occupation}
             friends={heroes.friends}
             superpowers={heroes.superpowers}
-          ></Superheroes>
+          />
         ))}
       </div>
     );
