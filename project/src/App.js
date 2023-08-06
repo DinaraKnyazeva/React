@@ -1,4 +1,4 @@
-import Card from "./components/card/card";
+import Card from "./pages/card/Card";
 import "../src/style/app.css";
 
 export default function App() {

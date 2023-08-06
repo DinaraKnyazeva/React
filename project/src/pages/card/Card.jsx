@@ -1,7 +1,9 @@
 import React from "react";
 import "./card.scss";
+import "../../components/btn/Btn";
 import imgDogCard from "../../assets/img/dogcard.png";
 import imgPencil from "../../assets/img/pencil.png";
+import Btn from "../../components/btn/Btn";
 
 export default class Card extends React.Component {
   render() {
@@ -33,9 +35,9 @@ export default class Card extends React.Component {
               <button className="card-words__button">Показать ответ</button>
             </div>
             <div className="card-words__inner-repeat">
-              <button className="card-words__button">Трудно</button>
-              <button className="card-words__button">Хорошо</button>
-              <button className="card-words__button">Легко</button>
+              <Btn name={"Трудно"} className={"card-words__button"} />
+              <Btn name={"Хорошо"} className={"card-words__button"} />
+              <Btn name={"Легко"} className={"card-words__button"} />
             </div>
           </div>
         </div>
