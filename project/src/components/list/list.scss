@@ -1,0 +1,22 @@
+@import "../../style/abstracts/variables";
+@import "../../style/abstracts/mixin";
+
+.list {
+  margin: 0 3% 0 3%;
+  .list__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .list__english,
+  .list__transcription,
+  .list__russian {
+    width: 25%;
+  }
+  p {
+    @include text-dark;
+  }
+  .list__line {
+    width: 100%;
+    border: 1px dashed #3e3e428b;
+  }
+}

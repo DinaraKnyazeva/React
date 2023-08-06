@@ -1,8 +1,29 @@
+@import "../base/typography";
 //заголовки
 @mixin h1 {
   color: $text-color-dark;
+  font-family: "RalewayItalic";
   font-size: 34px;
   text-align: center;
+  padding: 15px 0 15px 0;
+}
+@mixin h2 {
+  color: $bg-color-light;
+  font-family: "RalewayItalic";
+  font-size: 20px;
+  text-align: center;
+}
+@mixin text-light {
+  color: $bg-color-light;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 16px;
+}
+@mixin text-dark {
+  color: $text-color-dark;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 16px;
 }
 //для кнопок
 @mixin btn {

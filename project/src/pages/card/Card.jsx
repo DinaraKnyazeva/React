@@ -2,7 +2,6 @@ import React from "react";
 import "./card.scss";
 import "../../components/btn/Btn";
 import imgDogCard from "../../assets/img/dogcard.png";
-import imgPencil from "../../assets/img/pencil.png";
 import Btn from "../../components/btn/Btn";
 
 export default class Card extends React.Component {
@@ -20,8 +19,8 @@ export default class Card extends React.Component {
           </div>
           <div className="card-words__cards-box">
             <div className="card-words__cards-icons">
-              <button src={imgPencil}></button>
-              <link rel="stylesheet" href="#" src={imgPencil} />
+              <button src=""></button>
+              <link rel="stylesheet" href="#" src="" />
             </div>
             <p className="card-words__word-ru">Земля</p>
             <p className="card-words__word-en">Earth</p>

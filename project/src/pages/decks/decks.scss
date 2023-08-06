@@ -1,0 +1,45 @@
+@import "../../style/abstracts/variables";
+@import "../../style/abstracts/mixin";
+
+.decks {
+  background: $bg-color-dark;
+  display: flex;
+  padding: 25px 15% 25px 15%;
+
+  .decks__module-cont {
+    background: $bg-color-light;
+    border-radius: 10px;
+    width: 70%;
+    padding: 2%;
+  }
+  .decks__title {
+    @include h1;
+  }
+  img {
+    width: 70%;
+  }
+  li {
+    list-style-type: none;
+    padding-top: 2%;
+  }
+  a {
+    @include text-dark;
+    text-align: center;
+    text-decoration: none;
+  }
+  span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  #en {
+    background: #a79dda;
+  }
+  #es {
+    background: #eda25e;
+  }
+  #de {
+    background: #b3da7f;
+  }
+}
