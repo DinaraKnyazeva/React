@@ -13,32 +13,13 @@
   .list__russian {
     width: 30%;
   }
-  .list__cont-icon {
-    width: 10%;
-  }
-  .list__cont-icon a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-  }
-  svg {
-    width: 60%;
-    height: 100%;
-  }
+
   p {
     @include text-dark;
+    margin: 0;
   }
   .list__line {
     width: 100%;
     border: 1px dashed #3e3e428b;
-  }
-  .list__cont-icon {
-    display: flex;
-    max-height: 30px;
-    align-items: center;
-  }
-  #basket,
-  #pencil {
-    fill: $text-color-dark;
   }
 }

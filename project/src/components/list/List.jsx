@@ -1,6 +1,5 @@
 import "./list.scss";
-import pencil from "../../assets/img/sprite.svg";
-import basket from "../../assets/img/sprite.svg";
+import Pencil from "../pencil/Pencil";
 
 export default function List(props) {
   return (
@@ -15,18 +14,7 @@ export default function List(props) {
         <div className="list__russian">
           <p>{props.transcription}</p>
         </div>
-        <div className="list__cont-icon">
-          <a href="#" title="Редактировать">
-            <svg id="pencil">
-              <use href={pencil + "#pencil"} />
-            </svg>
-          </a>
-          <a href="#" title="Удалить">
-            <svg id="basket">
-              <use href={basket + "#basket"} />
-            </svg>
-          </a>
-        </div>
+        <Pencil />
       </div>
 
       <p className="list__line"></p>
