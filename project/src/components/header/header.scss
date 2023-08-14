@@ -4,6 +4,9 @@
 header {
   background: $bg-color-dark;
   margin: 0;
+  position: fixed;
+  width: 100%;
+
   .header {
     display: flex;
     justify-content: space-around;

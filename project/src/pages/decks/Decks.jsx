@@ -3,7 +3,7 @@ import imgDecks from "../../assets/img/dogModule.png";
 
 export default function Decks() {
   return (
-    <div className="decks">
+    <div className="decks" id="decks">
       <div className="decks__module-cont">
         <div className="decks__title">Модули</div>
         <div className="decks__list">

@@ -6,7 +6,7 @@ import wordJson from "../../data/words.json";
 
 export default function Table() {
   return (
-    <div className="table">
+    <div className="table" id="table">
       <div className="table__container">
         <div className="table__title">Словарь</div>
         <div className="table__cont-new-word">

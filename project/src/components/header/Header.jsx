@@ -7,16 +7,16 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#">Словарь</a>
+            <a href="#table">Словарь</a>
           </li>
           <li>
-            <a href="#">Тренировка</a>
+            <a href="#card-words__cards">Тренировка</a>
           </li>
           <li>
-            <a href="#">Модули</a>
+            <a href="#decks">Модули</a>
           </li>
           <li>
-            <a href="#">Главная</a>
+            <a href="#title">Главная</a>
           </li>
         </ul>
       </nav>
